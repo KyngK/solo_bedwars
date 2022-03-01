@@ -9,7 +9,8 @@
 
 
 HELPFUL LINKS:
-- Structure summoning (use for placing maps): https://discord.com/channels/154777837382008833/948344310951190568
+- Structure summoning (use for placing maps):  https://discord.com/channels/154777837382008833/948344310951190568
+- Selecting player based on position (use predicates for generator):  https://discord.com/channels/154777837382008833/157097006500806656/704002275332456468
 - Custom TNT knockback:  https://discord.com/channels/154777837382008833/948312316133404692
 - Custom Fall Damage:  https://discord.com/channels/154777837382008833/948316087609618432
 
@@ -38,13 +39,13 @@ PROJECT STRUCTURE:
   - When game starts assign teams FIRST then teleport to bases so ADD TEAMS!!
   - Give some tags, and work on compass system LATER
 - Add fighting system, bed break system, final kill system, death system, systems galore :D
-- Add generators. Make them cap at a certain amount of resources so maybe only execute if scoreboard cap for that entity is 0, as well as multiple titles for Diamond/Emerald, with different tiers
+- Add generators. Make them cap at a certain amount of resources so maybe only execute if scoreboard cap for that entity is 0, as well as multiple titles for Diamond/Emerald, with different tiers.
   - Cap system can be done by spawning if the scoreboard is at a certain value, (ex. 200 ticks) for 10s, then when it spawns increase a cap scoreboard by 1,
   and when it reaches x value, just stop spawning/set scoreboard cap value for that entity to 0
   - Test on hypixel for actual speeds - and splitting mechanisms
-  - Add splitting (test this)! I think that splitting is just giving the other players in the gen same amount as the other player is. Can be done by
+  - Add splitting (test this)! I think that splitting is just giving the other players in the gen same amount as the other player is getting. Can be done by
   checking if a player obtains that item on that specific team, then giving that item to the other players on the team that are in the generator. Generator
-  position detecting/detecting if they are in the generator can be done using predicates
+  position detecting can be done using position predicates (see helpful links)
   - Use the liked video about animated generators for more info
   - Add generator tiers, for different spawning times etc.
 - Add block limits, test this on Hypixel. Test block limits in all directions
