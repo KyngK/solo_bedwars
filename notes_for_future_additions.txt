@@ -8,6 +8,11 @@
 
 
 
+HELPFUL LINKS:
+- Structure summoning (use for placing maps): https://discord.com/channels/154777837382008833/948344310951190568
+- Custom TNT knockback:  https://discord.com/channels/154777837382008833/948312316133404692
+- Custom Fall Damage:  https://discord.com/channels/154777837382008833/948316087609618432
+
 
 MAP SPECIFIC ITEMS:
 
