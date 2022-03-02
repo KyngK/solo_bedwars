@@ -1,0 +1,2 @@
+function solo_bedwars:speedway/entered
+function solo_bedwars:join
