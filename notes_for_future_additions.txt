@@ -9,6 +9,8 @@
 
 
 HELPFUL LINKS:
+- Structure overrides:  https://discord.com/channels/154777837382008833/948461582806024252
+- Structure block not working troubleshooting:  https://discord.com/channels/154777837382008833/948629194932355103
 - Structure summoning (use for placing maps):  https://discord.com/channels/154777837382008833/948344310951190568
 - Selecting player based on position (use predicates for generator):  https://discord.com/channels/154777837382008833/157097006500806656/704002275332456468
 - Custom TNT knockback:  https://discord.com/channels/154777837382008833/948312316133404692
