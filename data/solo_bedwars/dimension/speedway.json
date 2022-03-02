@@ -5,6 +5,7 @@
             "lakes": false,
             "features": false,
             "biome": "minecraft:the_void",
+            "structure_overrides": [],
             "structures": {
                 "structures": {}
             },
