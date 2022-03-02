@@ -15,6 +15,7 @@ HELPFUL LINKS:
 - Selecting player based on position (use predicates for generator):  https://discord.com/channels/154777837382008833/157097006500806656/704002275332456468
 - Custom TNT knockback:  https://discord.com/channels/154777837382008833/948312316133404692
 - Custom Fall Damage:  https://discord.com/channels/154777837382008833/948316087609618432
+- This is just helpful in general (block state tag):  https://discord.com/channels/154777837382008833/948680786754826291
 
 
 MAP SPECIFIC ITEMS:
@@ -29,19 +30,19 @@ MAP SPECIFIC ITEMS:
 
 
 PROJECT STRUCTURE:
+- Organize structure blocks so that they properly load the map. Speedway for now, other maps later.
 - Make a real load function and add stuff to it
-- Make a scoreboard that shows players, teams, etc. (the scoreboard that shows)
+- Make it so if the game is started players who join will join as spectators this is simple just add execute if game started statements in the join function
+- Make a scoreboard that shows players, teams, etc. (the scoreboard that shows on the side)
 - Make a bossbar showing whatever it needs to show
-- Make a folder for each map (maybe just one now then duplicate later)
-- Make a join function
-  - In the join function there needs to be a command that teleports them to a dimension (MAKE THIS). Use speedway for testing but I think hollow should be default map
+- Add some base necessary things to the join function
   - Spawns player in the cage, with the player counter
-- Start system
-  - Create a custom scoreboard system
-  - Uses normal bedwars start system, but give the original players an option to force start the game, as well as admin score or something? Copy from pkbd
+  - Start system
+  - Create a custom scoreboard system just for join now, in game later
+  - Uses normal bedwars start system, but give the original players an option to force start the game. Make a trigger function that makes people admin (DIFFERENT FROM OP, this allows them just to force start the game)
   - When game starts assign teams FIRST then teleport to bases so ADD TEAMS!!
   - Give some tags, and work on compass system LATER
-- Add fighting system, bed break system, final kill system, death system (AND KILL MESSAGES), systems galore :D
+- Add fighting system (attack speed reduction can be done later unless it's a player based attribute (not item) if it is player based then add it in the join function), bed break system, final kill system, death system (AND KILL MESSAGES), systems galore :D
 - Add generators. Make them cap at a certain amount of resources so maybe only execute if scoreboard cap for that entity is 0, as well as multiple titles for Diamond/Emerald, with different tiers.
   - Cap system can be done by spawning if the scoreboard is at a certain value, (ex. 200 ticks) for 10s, then when it spawns increase a cap scoreboard by 1,
   and when it reaches x value, just stop spawning/set scoreboard cap value for that entity to 0
@@ -50,21 +51,32 @@ PROJECT STRUCTURE:
   checking if a player obtains that item on that specific team, then giving that item to the other players on the team that are in the generator. Generator
   position detecting can be done using position predicates (see helpful links)
   - Use the liked video about animated generators for more info
-  - Add generator tiers, for different spawning times etc.
+  - Add generator tiers, for different spawning times etc. also think of events system that will be implemented in more depth later
 - Add block limits, test this on Hypixel. Test block limits in all directions
-- Add shops (!) This is going to take a while, probably just use a chest minecart that's disguised and then make it into a custom gui (DO DIAMOND SHOP FIRST, because
-some items have different attributes that are modified by diamond shop and therefore they should be done first)
+- Add shops (!) This is going to take a while, just use a remodeled chest or something we already have custom textures so no harm in adding more (DO DIAMOND SHOP FIRST, because some items have different attributes that are modified by diamond shop and therefore they should be done first)
+  - Make sure to add quick buy as well as the thing that makes the items go to certain slots in the hotbar!
   - Bridge egg is simple however take into account build limits
-- Test size of different methods of custom shops so the best is used I suppose. This is going to be the hardest part is my guess
+  - Make sure sword attack speed is reduced/can you modify it for all items, even fists?
   - Add all items
   - Fireballs are remodeled carrots on sticks because... well it's hard to do other methods
   - Bedbug is... well a modified snowball this can be figured out as well
+  - Turn off pearl damage
 - Add team/ender chests. Ender chests easy af but team chests not so much
-- Modify tnt/fireball kb
+- Modify tnt/fireball damage, kb is probably not possible but maybe give it a shot! Charged creepers could work with resistance although that is going to be very hard to implement
 - Custom fall damage??? Test if this is actually a thing on hypixel
+- Make trackers and the compass system like quick chat
+- Make/finish?(if already started) an in game scoreboard system with final kills beds and kills
+  - Make it so they also show in tab/customize tab
+- Add victory system/losing system. Add some scoreboards to count total wins, final kills, beds and kills. Maybe even add stars in a future update??
 - CUSTOMIZATION
  - Add all customizations, which include (check this list):
   - Custom kill messages, particle trails, bed break effects, final kill effects, death sounds, particle trails, victory dances (DO THESE AFTER DONE), log skins, and shopkeeper skins
+  - For magic toy stick use explosion motion for falling blocks that turn back to normal blocks when they hit the ground. Also some turn into snow blocks
 - Add events system (over time the game progresses with different events like gen tiers etc.
   - Add dragons with custom names of dragons, make custom targets. etc... until game end
-- Add all the maps, and a system to choose them
+- Add all the maps, and a system to choose them. Folders for each maps, see things that differentiate for each map above. Hollow should be default map - make sure
+this is set in the join function
+- Add private game functions?
+- Determine player cap system
+- Optimize code as much as possible
+- Maybe for future update by try for this one - make a plugin that modifies the fireballs and tnt damage/knockback that's optional for people on servers, later maybe even make it integrate so it turns off the fireballs and shop system and does it itself
