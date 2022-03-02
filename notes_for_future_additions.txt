@@ -10,6 +10,7 @@
 
 HELPFUL LINKS:
 - Structure overrides:  https://discord.com/channels/154777837382008833/948461582806024252
+- Turning off pearl damage:  https://discord.com/channels/154777837382008833/948683874601435156
 - Structure block not working troubleshooting:  https://discord.com/channels/154777837382008833/948629194932355103
 - Structure summoning (use for placing maps):  https://discord.com/channels/154777837382008833/948344310951190568
 - Selecting player based on position (use predicates for generator):  https://discord.com/channels/154777837382008833/157097006500806656/704002275332456468
@@ -60,7 +61,7 @@ PROJECT STRUCTURE:
   - Add all items
   - Fireballs are remodeled carrots on sticks because... well it's hard to do other methods
   - Bedbug is... well a modified snowball this can be figured out as well
-  - Turn off pearl damage
+  - Turn off pearl damage - see helpful links above. Also make a function for the land so a sound can be added (if there is one)
 - Add team/ender chests. Ender chests easy af but team chests not so much
 - Modify tnt/fireball damage, kb is probably not possible but maybe give it a shot! Charged creepers could work with resistance although that is going to be very hard to implement
 - Custom fall damage??? Test if this is actually a thing on hypixel
