@@ -22,18 +22,20 @@ HELPFUL LINKS:
 MAP SPECIFIC ITEMS:
 
 - Height limit
+- Selecting players by dimension
+- Maps_placed and forceloaded chunks
 - Generator placement and player positions (for splitting)
 - Block limit (how far out you can place blocks)
 - Spawnpoint (where you spawn in the cage may not change, but when the game starts)
 - Spectator placement??
 - Generator speeds
+- Tick function for entering different dimensions
 
 
 
 PROJECT STRUCTURE:
-- Organize structure blocks so that they properly load the map. Speedway for now, other maps later.
-- Make a real load function and add stuff to it
-- Make it so if the game is started players who join will join as spectators this is simple just add execute if game started statements in the join function
+[DONE] - Make a real load function and add stuff to it
+[DONE] - Make it so if the game is started players who join will join as spectators this is simple just add execute if game started statements in the join function
 - Make a scoreboard that shows players, teams, etc. (the scoreboard that shows on the side)
 - Make a bossbar showing whatever it needs to show
 - Add some base necessary things to the join function
@@ -77,6 +79,8 @@ PROJECT STRUCTURE:
   - Add dragons with custom names of dragons, make custom targets. etc... until game end
 - Add all the maps, and a system to choose them. Folders for each maps, see things that differentiate for each map above. Hollow should be default map - make sure
 this is set in the join function
+- Check if players are in block and... idk man make them not do it if they are (maybe store position then schedule function that checks, and if they
+are then teleport them back)
 - Add private game functions?
 - Determine player cap system
 - Optimize code as much as possible

@@ -1,4 +1,4 @@
-red_base: -40 63 -88, with offset 0 1 0
+--red_base: -40 63 -88, with offset 0 1 0
 blue_base: 24 63 -88, with offset 0 1 0
 green_base: 66, 64, -40 with offset 0 0 0
 yellow_base: 66, 64, 24, with offset 0 0 0
@@ -13,6 +13,6 @@ white_pink_dia: -45, 63, 23
 gray_pink_quarter: -60, 62, -13
 green_yellow_quarter: 24, 62, -14
 aqua_white_quarter: -15, 64, 45
-red_blue_quarter: -16, 64, -60
+blue_red_quarter: -16, 64, -60
 mid1: -16, 54, -44
 mi2: -16, 54, 4
